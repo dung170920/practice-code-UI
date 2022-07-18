@@ -1,0 +1,17 @@
+@mixin itemChild($bg, $color, $fill, $tranform, $timeBg) {
+  background-color: $bg;
+  color: $color;
+
+  .chart {
+    svg {
+      fill: $fill !important;
+      transform: $tranform;
+    }
+  }
+
+  .time {
+    &::before {
+      background-color: $timeBg;
+    }
+  }
+}

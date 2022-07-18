@@ -1,0 +1,433 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  line-height: 1.5;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+html {
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+}
+
+.wrapper {
+  max-width: 1200px;
+  position: relative;
+  margin: 0 auto;
+  background-color: white;
+  padding: 4rem 2rem 2rem;
+}
+
+.form-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: initial;
+  margin-bottom: 5rem;
+}
+.form-header .logo {
+  display: flex;
+  align-items: center;
+  justify-content: initial;
+  flex-direction: initial;
+}
+.form-header .logo-image {
+  width: 3rem;
+  height: 3rem;
+  background-color: #035fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: initial;
+}
+.form-header .logo-text {
+  font-size: 1.75rem;
+  font-weight: 600;
+  margin-left: 0.6rem;
+  color: #05365c;
+}
+.form-header .logo-text span {
+  font-weight: 400;
+}
+.form-header .timer {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.form-header .timer-box {
+  background-color: #17254c;
+  color: white;
+  width: 1.7rem;
+  height: 2.5rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  margin-left: -4px;
+}
+.form-header .timer-divider {
+  position: relative;
+  right: 2px;
+}
+.form-body form .input-group {
+  margin-bottom: 2rem;
+}
+.form-body form .input-group.col {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: initial;
+}
+.form-body form .input-group.col .input-label {
+  margin-bottom: 0;
+}
+.form-body form .input-group.col .input-input {
+  width: 400px;
+}
+.form-body form .input-group.col .input-input input {
+  text-align: center;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+.form-body form .input-group.col .input-input input[type=password] {
+  text-align: left;
+}
+.form-body form .input-label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: initial;
+  margin-bottom: 1.8rem;
+}
+.form-body form .input-label .description .label {
+  cursor: pointer;
+  font-size: 1.15rem;
+  margin-bottom: 0.4rem;
+  font-weight: 600;
+  color: #05365c;
+}
+.form-body form .input-label .description .helper-text {
+  font-size: 0.75rem;
+  color: #8e96a3;
+}
+.form-body form .input-inputs {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: initial;
+  width: 400px;
+}
+.form-body form .input-inputs span {
+  margin: 0 1rem;
+  font-weight: 800;
+  font-size: 0.75rem;
+  color: #05365c;
+}
+.form-body form .input-input {
+  position: relative;
+}
+.form-body form .input-input .icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.form-body form .input-input .icon.symbol {
+  width: 2rem;
+  height: 2rem;
+  left: 0.75rem;
+}
+.form-body form .input-input .icon.badge {
+  width: 1.25rem;
+  height: 1.25rem;
+  right: 0.75rem;
+}
+.form-body form .input-input .icon.dots {
+  width: 1.25rem;
+  height: 1.25rem;
+  right: 0.75rem;
+  opacity: 0.35;
+}
+.form-body form .input-input input {
+  outline-color: #035fff;
+  color: #05365c;
+  border: 2px solid rgba(224, 224, 224, 0.5);
+  width: 100%;
+  padding: 0.75rem 3.5rem;
+  background: transparent;
+  border-radius: 8px;
+  font-weight: 600;
+}
+.form-body form .input-input input:disabled {
+  background: linear-gradient(45deg, #f2f4f8, transparent);
+  color: #8e96a3;
+}
+.form-body form .input-input input:focus {
+  color: #035fff;
+  background-color: #f0f5ff;
+}
+
+.btn-edit {
+  display: flex;
+  align-items: center;
+  justify-content: initial;
+  flex-direction: initial;
+  color: #035fff;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.btn-edit svg {
+  fill: #035fff;
+  height: 1rem;
+  width: 1rem;
+}
+.btn-submit {
+  background-color: #035fff;
+  color: white;
+  width: 100%;
+  padding: 1rem;
+  margin-top: 1rem;
+  border-radius: 6px;
+  font-weight: 500;
+  transition: all 0.2s linear;
+}
+.btn-submit:hover {
+  filter: brightness(0.9);
+}
+.btn-text {
+  margin-left: 0.5rem;
+  font-weight: 700;
+}
+
+.checkout {
+  position: relative;
+  width: 90%;
+  height: 100%;
+  float: right;
+}
+.checkout .blue {
+  width: 5rem;
+  height: 1.5rem;
+  background-color: #035fff;
+  z-index: 1;
+  position: absolute;
+  top: -6px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 2px;
+}
+.checkout .card {
+  width: 14rem;
+  height: 20rem;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.6), #fff);
+  box-shadow: 0 4px 50px 2px rgba(142, 142, 142, 0.15);
+  backdrop-filter: blur(15px);
+  padding: 1.75rem;
+  border-radius: 1rem;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  overflow: hidden;
+  z-index: 2;
+}
+.checkout .card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: initial;
+  position: relative;
+  margin-bottom: 6rem;
+}
+.checkout .card-header .chip {
+  height: 2.8rem;
+  width: 2.2rem;
+}
+.checkout .card-header .wifi {
+  height: 2rem;
+  width: 2rem;
+}
+.checkout .card-body {
+  position: relative;
+  color: #05365c;
+}
+.checkout .card-body .holder {
+  text-transform: capitalize;
+}
+.checkout .card-body .number {
+  display: flex;
+  align-items: center;
+  justify-content: initial;
+  flex-direction: initial;
+}
+.checkout .card-body .number-hide {
+  display: flex;
+  align-items: center;
+  justify-content: initial;
+  flex-direction: initial;
+  margin: 1rem 0;
+}
+.checkout .card-body .number-hide .dot {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background-color: #05365c;
+  margin-right: 0.5rem;
+}
+.checkout .card-body .number-show {
+  font-weight: 600;
+  font-size: 1.5rem;
+  margin-left: 1rem;
+}
+.checkout .card-footer {
+  color: #05365c;
+  margin-top: 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: initial;
+}
+.checkout .card-footer .expiry {
+  font-weight: 600;
+  font-size: 1.15rem;
+}
+.checkout .card-footer img {
+  width: 3rem;
+  height: 3rem;
+}
+.checkout-details {
+  background-color: #eff5f9;
+  width: 100%;
+  height: 83%;
+  border-radius: 1rem;
+  position: absolute;
+  bottom: 0;
+}
+.checkout-details .purchase-info {
+  color: #05365c;
+  position: relative;
+  top: 13rem;
+  padding: 2rem 1.5rem;
+}
+.checkout-details .purchase-info .info {
+  text-transform: capitalize;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: initial;
+  margin-bottom: 0.6rem;
+}
+.checkout-details .purchase-info .info .title {
+  font-size: 14px;
+}
+.checkout-details .purchase-info .info .value {
+  font-weight: 600;
+  color: #17254c;
+}
+.checkout-details .purchase-info .info .value img {
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  margin-right: 0.2rem;
+}
+.checkout-details .purchase-total {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: initial;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 1.5rem;
+  color: #05365c;
+}
+.checkout-details .purchase-total .text p {
+  font-size: 14px;
+}
+.checkout-details .purchase-total .text .amount {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: initial;
+  font-weight: 500;
+}
+.checkout-details .purchase-total .text .amount h4 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #17254c;
+  margin-right: 0.5rem;
+}
+.checkout-details .purchase-total .text .amount h4 sub {
+  bottom: 0;
+}
+.checkout-details .purchase-total img {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+.checkout-details .divider {
+  position: absolute;
+  bottom: 6.5rem;
+  width: 100%;
+  border-bottom: 3px dashed #d9dde7;
+  display: flex;
+  align-items: center;
+  justify-content: initial;
+  flex-direction: initial;
+}
+.checkout-details .divider .left,
+.checkout-details .divider .right {
+  position: absolute;
+  background-color: white;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+}
+.checkout-details .divider .left {
+  left: -1.25rem;
+}
+.checkout-details .divider .right {
+  right: -1.25rem;
+}
+
+/*# sourceMappingURL=main.css.map */
