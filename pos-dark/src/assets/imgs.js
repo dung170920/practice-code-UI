@@ -1,0 +1,10 @@
+export { default as avatar1 } from "./img/avatar-1.png";
+export { default as avatar2 } from "./img/avatar-2.png";
+export { default as avatar3 } from "./img/avatar-3.png";
+export { default as avatar4 } from "./img/avatar-4.png";
+export { default as avatar5 } from "./img/avatar-5.png";
+export { default as avatar6 } from "./img/avatar-6.png";
+export { default as chart } from "./img/chart.svg";
+export { default as food1 } from "./img/food-1.png";
+export { default as food2 } from "./img/food-2.png";
+export { default as food3 } from "./img/food-3.png";
